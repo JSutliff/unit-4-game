@@ -27,6 +27,8 @@ $('#crystal-4').attr('value', crystal4);
 function updateDom() {
   $('#compScore').text(compScore);
   $('#userScore').text(userScore);
+  $('#wins').text(wins);
+  $('#losses').text(losses);
 }
 
 initializeGame();
@@ -35,23 +37,37 @@ updateDom();
 $('#crystal-1').on('click', function() {
   var num = parseInt($(this).attr('value'));
   userScore += num;
-  updateDom();
+  checkLoss();
 });
 
 $('#crystal-2').on('click', function() {
   var num = parseInt($(this).attr('value'));
   userScore += num;
-  updateDom();
+  checkLoss();
 });
 
 $('#crystal-3').on('click', function() {
   var num = parseInt($(this).attr('value'));
   userScore += num;
-  updateDom();
+  checkLoss();
 });
 
 $('#crystal-4').on('click', function() {
   var num = parseInt($(this).attr('value'));
   userScore += num;
-  updateDom();
+  checkLoss();
 });
+
+function checkLoss() {
+  if (userScore < compScore) {
+    updateDom();
+  } else if (userScore === compScore) {
+    wins++;
+    initializeGame();
+    updateDom();
+  } else {
+    losses++;
+    initializeGame();
+    updateDom();
+  }
+}
