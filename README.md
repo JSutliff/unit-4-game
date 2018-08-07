@@ -11,7 +11,7 @@ clicking four crystals that reveal hidden values upon each click.
 # Link to deployed site
 <!-- make a link to the deployed site --> 
 <!-- [What the user will see](the link to the deployed site) -->
-[Psychic-Game](https://jsutliff.github.io/unit-4-game/)
+[Magic Crystal Game](https://jsutliff.github.io/unit-4-game/)
 
 # Images
 <!-- take a picture of the image and add it into the readme  -->
