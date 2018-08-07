@@ -56,3 +56,7 @@ body {
 .title {
   background-color: pink;
 }
+
+.container {
+  width: 80%;
+}
