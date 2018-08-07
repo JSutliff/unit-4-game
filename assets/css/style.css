@@ -6,6 +6,7 @@
 
 #crystal-1 {
   margin: 2em;
+  
 }
 
 #crystal-2 {
@@ -14,10 +15,13 @@
 
 #crystal-3 {
   margin: 2em;
+  
 }
 
 #crystal-4 {
   margin: 2em;
 }
 
-
+img {
+  height: 12em;
+}
