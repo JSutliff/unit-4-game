@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Document</title>
 </head>
 <body>
-  <div class="grid">
-    <div class="title">
+  <div class="container">
+    <div class="row title">
       <h1>Crystal Collector</h1>
     </div>
     <div class="instructions">
@@ -22,43 +23,37 @@
         a new score and the values of the crystals will reset at the start of 
         each game. 
       </p>
-      <p>
-        
-      </p>
-      <p>
-        
-      </p>
     </div>
 
-    <div class='compNum'>
-      <h2>Computer Score</h2>
-      <h2><span id="compScore"></span></h2>
+    <div class='col compNum'>
+      <h2 class='col'>Computer Score: </h2>
+      <h2> <span id="compScore"></span></h2>
     </div>
 
-    <div class='winLoss'>
-      Wins: <span id="wins"></span>
-      Losses: <span id="losses"></span>
+    <div class='col winLoss'>
+      Wins: <span class='col' id="wins"></span>
+      Losses: <span class='col' id="losses"></span>
     </div>
 
-    <div class="crystals">
-      <div id="crystal-1">
+    <div class="row crystals">
+      <div class='col' id="crystal-1">
         <img src="assets/images/crystal-1.png" alt="">
       </div>
-      <div id="crystal-2">
+      <div class='col' id="crystal-2">
           <img src="assets/images/crystal-2.png" alt="">
       </div>
-      <div id="crystal-3">
+      <div class='col' id="crystal-3">
           <img src="assets/images/crystal-3.png" alt="">
       </div>
-      <div id="crystal-4">
+      <div class='col' id="crystal-4">
           <img src="assets/images/crystal-4.png" alt="">
       </div>
     </div>
 
-    <div class="crsytalScore">
+    <div class="row crsytalScore">
       <h2>Your score is:</h2>
       <div>
-        <h2><span id="userScore"></span></h2>
+        <h2 class='col'><span id="userScore"></span></h2>
       </div>
     </div>
 
